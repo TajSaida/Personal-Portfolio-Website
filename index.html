@@ -19,7 +19,8 @@
         </nav>
        
     </header>
-    <div class="main-container" id="main-container">
+    <main>
+      <div class="main-container" id="main-container">
         <div class="info-side">
             <h3 class="hello">Hello , It's me</h3>
             <h1>Saida Taj M R</h1>
@@ -51,9 +52,9 @@
             <h3 class="page-title">ABOUT</h3>
             <div class="about-container flow-text">
                     <blockquote>
-                    <h3>
+                    <h4>
                         A Software Developer with a passion for UI Development.
-                    </h3>
+                    </h4>
                     </blockquote>  
                
                 <p>
@@ -145,9 +146,6 @@
                     <div class="col s4 m2">
                       <img alt="" src="/assets/azure devops.png" class="responsive-img" /><span class="skills-text">Azure Devops</span>
                     </div>
-                    <div class="col s4 m2">
-                        <img alt="" src="/assets/agile.png" class="responsive-img" /><span class="skills-text">Azile</span>
-                      </div>
                       <div class="col s4 m2">
                         <img alt="" src="/assets/jira.png" class="responsive-img" /><span class="skills-text">JIRA</span>
                       </div>
@@ -256,7 +254,7 @@
               </div>
             
               <!-- Experience 3 -->
-              <div class="card">
+              <div class="card finastra">
                 <div class="card-content">
                     <div class="">
                       <p>
@@ -310,14 +308,20 @@
         const skills = document.getElementById('skills');
         const skillsData = document.getElementById('skills-data');
         const experience = document.getElementById('experience');
-        const experienceData = document.getElementById('experienceData')
-        home.addEventListener('click', function(event){
+        const experienceData = document.getElementById('experienceData');
+        if (window.innerWidth <= 414) { // Adjust the screen width value as needed
+          aboutData.style.display = "block";
+          skillsData.style.display ='block';
+          experienceData.style.display='block';
+
+    } else {
+      home.addEventListener('click', function(event){
             event.preventDefault();
             console.log('Home clicked')
 
             aboutLink.classList.remove('active');
             home.classList.add('active');
-            mainContainer.style.display='flex';
+            mainContainer.style.display='inline-block';
             aboutData.style.display='none';
             skills.classList.remove('active');
             skillsData.style.display ='none';
@@ -362,6 +366,9 @@
             aboutData.style.display = 'none';
             skillsData.style.display ='none';
         })
+    }
+       
     </script>
+    </main>
 </body>
 </html>
