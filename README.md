@@ -1,5 +1,5 @@
 # Personal Portfolio App
-This is a responsive portfolio app. It is built using HTML, CSS, andm JS. The app showcases the skills, experiences, and contact information in the home container.
+This is a responsive portfolio app. It is built using HTML, CSS, andm JS. The app showcases the skills, experiences, and contact information (in the home container).
 
 # Features
 Responsive design that adapts to different screen sizes and devices.
