@@ -372,7 +372,7 @@ p,section{
 }
 .card{
     margin: 5% 0 0.5rem 0;
-    padding: 5px;
+    padding: 10px;
 }
 .add-color {
     border-bottom: 1px solid #ddd;
@@ -391,6 +391,7 @@ p,section{
 }
 #aboutData h3{
     width: 150%;
+    margin-bottom: 8%;
 }
 section{
     width: 80% !important;
@@ -432,5 +433,6 @@ img.icons{
 .card.finastra {
     width: 150%;
 }
+
 
   }
