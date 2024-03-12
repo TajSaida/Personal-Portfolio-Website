@@ -61,7 +61,11 @@ body{
     font-size: 20px;
 }
 .page-title{
+    /* background-color: #00ff2f;
+    color: black; */
     color: #00ff2f;
+    /* height: 50px; */
+   /* padding: 15px 5px; */
    border-radius: 20px;
    display: flex;
    justify-content: center;
@@ -145,6 +149,9 @@ button{
     animation-delay: 1.5s;
     opacity: 0;
 }
+/* ul {
+    list-style-type: none;
+} */
 
 li b{
     font-weight: bold;
@@ -189,24 +196,7 @@ li{
     animation-delay: 1.2s;
     margin-left: 50px;
 }
-span.skills-text.css3 {
-    margin-left: 20px !important;
-}
-span.skills-text.react {
-    margin-left: 30px !important;
-}
-span.skills-text.redux {
-    margin-left: 20px !important;
-}
-span.skills-text.recoil {
-    margin-left: 15px !important;
-}
-span.skills-text.git {
-    margin-left: 30px !important;
-}
-span.skills-text.jira {
-    margin-left: 25px !important;
-}
+
 
 button:hover{
     box-shadow: none;
@@ -368,7 +358,7 @@ button:hover{
 .main-container , .about-section,.experience-section{
     display: flex;
     flex-direction: column-reverse;
-    padding: 15px 15%;
+    padding: 15px 15% 15px 5%;
     justify-content: center;
     align-items: center;
     font-size: 15px;
@@ -417,6 +407,12 @@ img.icons{
     width: 40px;
     margin: 0 10px;
 }
+.profile-image img{
+    width: 200px;
+    border-radius: 50%;
+    margin-left: -20% !important;
+}
+
 
 .li{
     margin: 10px 0;
