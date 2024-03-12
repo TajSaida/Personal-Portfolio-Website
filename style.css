@@ -156,7 +156,7 @@ button{
 li b{
     font-weight: bold;
 }
-.about-container h3{
+.common-container h3{
     margin: 3% 0; 
     animation: slideRight 1s ease forwards;
     opacity: 0;
@@ -390,8 +390,12 @@ p,section{
     padding-bottom: 5px;
     margin: 0.5rem 0;
 }
-.about-container{
+.common-container{
     width: 150%;
+}
+.skills-container{
+    width: 180%;
+    margin-left: -20%;
 }
 #aboutData h3{
     width: 150%;
@@ -417,7 +421,7 @@ img.icons{
 .li{
     margin: 10px 0;
 }
-.about-container h3{
+.common-container h3{
    font-size: medium;
 
 }
