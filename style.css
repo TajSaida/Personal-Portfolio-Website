@@ -61,14 +61,12 @@ body{
     font-size: 20px;
 }
 .page-title{
-    background-color: #00ff2f;
-    color: black;
-    height: 50px;
-   padding: 15px 5px;
+    color: #00ff2f;
    border-radius: 20px;
    display: flex;
    justify-content: center;
    animation: slideLeft 0.5s ease forwards;
+   letter-spacing: 6px;
    animation-delay: 1s;
    opacity: 0;
    font-size: 25px !important;
@@ -147,9 +145,6 @@ button{
     animation-delay: 1.5s;
     opacity: 0;
 }
-ul {
-    list-style-type: none;
-}
 
 li b{
     font-weight: bold;
@@ -192,6 +187,25 @@ li{
     animation: slideLeftP 1s ease forwards;
     opacity: 0;
     animation-delay: 1.2s;
+    margin-left: 50px;
+}
+span.skills-text.css3 {
+    margin-left: 20px !important;
+}
+span.skills-text.react {
+    margin-left: 30px !important;
+}
+span.skills-text.redux {
+    margin-left: 20px !important;
+}
+span.skills-text.recoil {
+    margin-left: 15px !important;
+}
+span.skills-text.git {
+    margin-left: 30px !important;
+}
+span.skills-text.jira {
+    margin-left: 25px !important;
 }
 
 button:hover{
@@ -403,23 +417,7 @@ img.icons{
     width: 40px;
     margin: 0 10px;
 }
-.profile-image img{
-    width: 200px;
-    border-radius: 50%;
-    margin-left: -20% !important;
-}
 
-.page-title{
-    background-color: #00ff2f;
-    color: black;
-    height: 25px;
-   padding: 5px;
-   border-radius: 10px;
-   opacity: 0;
-   font-size: 15px !important;
-   /* margin-left: 20%; */
-   margin-bottom: 10%;
-}
 .li{
     margin: 10px 0;
 }
