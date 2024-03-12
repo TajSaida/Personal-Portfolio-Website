@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Saida's Portfolio</title>
+    <link rel="icon" href="./assets/saida-png-circle.png"  sizes="114x114" type="image/png">
     <link rel="stylesheet" href="./style.css" class="css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio.</a>
+      <nav>
+        <a href="#" class="logo" >Portfolio.</a>
+      </nav>
         <nav class="navbar">
             <a href="#" class="active" style="--i:1" id="home">Home</a>
             <a href="#" aria-label="Navigate to the About section" id="about" style="--i:2">About</a>
-            <a href="#" style="--i:3" id="skills">Skills</a>
             <a href="#" style="--i:4" id ='experience'>Experience</a>
-            <!-- <a href="#" style="--i:5" id="contact">Contact</a> -->
+            <a href="#" style="--i:3" id="skills">Skills</a>
         </nav>
        
     </header>
@@ -30,7 +32,6 @@
 
             </p>
                <div class="align-icons">
-                <a href="https://github.com/TajSaida" target="_blank" ><img src="./github (2).png" alt="" style="--i:6" class="icons"></a>
                 <a href="https://www.linkedin.com/in/saida-taj-m-r-b3656495/" target="_blank" >
                 <img src="./linkedin.png" alt="" style="--i:7"  class="icons">
 
@@ -41,31 +42,27 @@
                     </a>
                </div>
             <br/>
-            <!-- <button class="btn">Download CV</button> -->
         </div>
-        <div class="profile-image">
+        <span class="profile-image">
             <img src="./saida.jpg" alt="">
-        </div>
+        </span>
     </div>
     <section id="about" class="about-section"  >
         <div id="aboutData" style="display: none;">
-            <h3 class="page-title">ABOUT</h3>
+            <h3 class="page-title">About</h3>
             <div class="about-container flow-text">
-                    <blockquote>
-                    <h4>
-                        A Software Developer with a passion for UI Development.
-                    </h4>
-                    </blockquote>  
-               
                 <p>
-                    I am passionate about developing complex applications that solve real-world problems impacting millions of users.
+                  As a developer, I believe in continuous learning. My current focus is on expanding my knowledge of JavaScript libraries and frameworks beyond React.js and Angular.
                 </p>
                 <p>
-                    <ul class ='ul-list'>
-                        <li><b class="add-bold">Languages:</b> HTML/CSS, JavaScript , React Js</li>
-                        <li><b class="add-bold">Frameworks:</b> Angular</li>
-                        <li><b class="add-bold">Tools & Technologies:</b> Git, Bit Bucket, JIRA , Azure Devops , Azile </li>
-                    </ul>
+                  <div class="card">
+                      <ul class ='ul-list'>
+                        <li><b class="add-bold">Optimized initial webpage loading by 70%</b> using advanced techniques in React.js, resulting in a significantly faster user experience.</li>
+                        <li><b class="add-bold">Implemented comprehensive Jest test cases</b> covering 70% of the current application, including Redux integration, ensuring application stability and maintainability.</li>
+                        <li><b class="add-bold">Successfully integrated SonarQube</b> into two projects, effectively resolving major bugs and achieving a <b class="add-bold">30-40% reduction in code duplication,</b>promoting cleaner and more efficient code.</li>
+                        <li> I focused on security by <b class="add-bold">preventing clickjacking</b> and updating <b class="add-bold">tokens both before and after authentication.</b></li>
+                      </ul>
+                  </div>
                 </p>
                 <p>
                     Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
@@ -73,6 +70,137 @@
             </div>
         </div>
     </section>
+    <section id= 'experience' class="experience-section" >
+      <div id="experienceData"  style="display: none;">
+          <div class="about-container">
+              <h3 class="page-title">Experience</h3>
+               <!-- Experience 4 -->
+               <div class="card finastra">
+                <div class="card-content">
+                    <div class="">
+                      <p>
+                        <span class="card-title"><a href="https://www.finastra.com/" target="_blank"
+                            class="add-bold">Finastra
+                             </a></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="role">Senior UI Developer</div>
+                  <ul class ='ul-list'>
+                    <li>
+                        Communicated with product managers and UX designers to translate project requirements and business objectives into polished
+                        user interfaces
+                    </li>
+                    <li>
+                        Improved and expanded project platforms using React js to develop rich User Interfaces.
+                    </li>
+                    <li>
+                        Collaborated with teammates to deliver valuable features meeting business and customer needs.
+                    </li>
+                    <li>
+                        Revised, modularized, and updated old code bases to modern development standards, reducing operating costs and improving functionality.
+                    </li>
+                    <li>
+                        Resolve defects/bugs during QA testing, pre-production, production, and post-release patches
+                    </li>
+                    <li>
+                        Worked in an Agile team, using Azure DevOps for task tracking and actively participated in daily sync-up calls for team alignment
+                    </li>
+                    
+                  </ul>
+                  <div class="card-action">
+                    <span>Dec 2021 - Current | Bengaluru, India</span>
+                  </div>
+                </div>
+              </div>
+                <!-- Experience 3 -->
+                <div class="card">
+                  <div class="card-content">
+                      <div class="">
+                        <p>
+                          <span class="card-title"><a href="https://www.cognizant.com/in/en" class="add-bold">Cognizant
+                              </a></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="role">Software Developer</div>
+                    <ul class ='ul-list'>
+                      <li>
+                          Worked closely with global customers spanning to troubleshoot software problems.
+                      </li>
+                      <li>
+                        I'm skilled at updating build files in CI/CD pipelines.
+                      </li>
+                     
+                      <li>
+                          Applied emerging technologies to update and maintain site applicability.
+                      </li>
+                      
+                    </ul>
+                    <div class="card-action">
+                      <span>Aug 2020 - Dec 2021 | Bengaluru, India</span>
+                    </div>
+                  </div>
+                  <!-- Experience 2 -->
+                <div class="card">
+                  <div class="card-content">
+                    <div class="row">
+                      <div>
+                        <p>
+                          <span class="card-title"><a href="https://www.medtronic.com/in-en/index.html" target="_blank"
+                              class="card-title">Medtronic</a></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="role">Associate IT Support Developer</div>
+                    <ul class ='ul-list'>
+                      <li>
+                          Developed and managed the frontend e-commerce platform using riot js.
+                      </li>
+                      <li>
+                          Worked on three web applications targeting customers, selling vendors, and admin users and created global components as per the requirement.
+                      </li>
+                      <li>
+                          Improved the response time by 20% by updating components to pure components and imported required components from library / utilites
+                      </li>
+                       
+                    </ul>
+                    <div class="card-action">
+                      <span>Feb 2019 - Jul 2020 | Bengaluru, India</span>
+                    </div>
+                  </div>
+                 
+                </div>
+                 <!-- Experience 1-->
+              <div class="card">
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m10">
+                      <p>
+                        <span class="card-title"><a href="https://www.cgi.com/en" target="_blank"
+                            class="add-bold">CGI</a></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="role">Associate System Engineer</div>
+                  <ul class ='ul-list'>
+                    <li>
+                        Performed unit testing of web applications and troubleshoot issues.
+                    </li>
+                    <li>
+                        Developed user-friendly components with validation and error handling.
+                    </li>
+                   
+                  </ul>
+                </div>
+                <div class="card-action">
+                  <span>July 2016 - Feb 2019 | Bengaluru, India</span>
+                </div>
+              </div>
+                </div>
+              </div>
+      </div>
+      </section>
     <section id="skills" class="skills-section">
         <div id="skills-data" style="display: none;">
             <div class="about-container">
@@ -85,7 +213,7 @@
                       <img alt="" src="./assets/1216733.png" class="responsive-img" /><span class="skills-text">HTML5</span> 
                     </div>
                     <div class="col s4 m2">
-                      <img alt="" src="/assets/CSS3_logo.svg.png" class="responsive-img" /><span class="skills-text">CSS3</span>
+                      <img alt="" src="/assets/CSS3_logo.svg.png" class="responsive-img" /><span class="skills-text css3">CSS3</span>
                     </div>
                     <div class="col s4 m2">
                       <img alt="" src="/assets/javascript-logo-javascript-icon-transparent-free-png.webp" class="responsive-img" />Java Script<span class="skills-text"></span>
@@ -100,16 +228,16 @@
                   <h4 class="add-color">Libraries</h4>
                   <div class="align-card-icons">
                     <div class="col s4 m2">
-                      <img alt="" src="/assets/react.png" class="responsive-img" /> <span class="skills-text"> React Js</span>
+                      <img alt="" src="/assets/react.png" class="responsive-img" /> <span class="skills-text react"> React Js</span>
                     </div>
                     <div class="col s4 m2">
-                      <img alt="" src="/assets/redux.svg" class="responsive-img" /> <span class="skills-text">Redux</span>
+                      <img alt="" src="/assets/redux.svg" class="responsive-img" /> <span class="skills-text redux">Redux</span>
                     </div>
                     <div class="col s4 m2">
                       <img alt="" src="/assets/ts.png" class="responsive-img" /><span class="skills-text">Type Script</span>
                     </div>
                     <div class="col s4 m2">
-                      <img alt="" src="/assets/recoil.png" class="responsive-img" /><span class="skills-text">Recoil</span>
+                      <img alt="" src="/assets/recoil.png" class="responsive-img" /><span class="skills-text recoil">Recoil</span>
                     </div>
                   </div>
                 </div>
@@ -138,7 +266,7 @@
       
       
                     <div class="col s4 m2">
-                      <img alt="" src="/assets/git.png" class="responsive-img" /><span class="skills-text">Git</span>
+                      <img alt="" src="/assets/git.png" class="responsive-img" /><span class="skills-text git">Git</span>
                     </div>
                     <div class="col s4 m2">
                       <img alt="" src="/assets/bit bucket.png" class="responsive-img" /><span class="skills-text">Bit Bucket</span>
@@ -147,7 +275,7 @@
                       <img alt="" src="/assets/azure devops.png" class="responsive-img" /><span class="skills-text">Azure Devops</span>
                     </div>
                       <div class="col s4 m2">
-                        <img alt="" src="/assets/jira.png" class="responsive-img" /><span class="skills-text">JIRA</span>
+                        <img alt="" src="/assets/jira.png" class="responsive-img" alt="jira" /><span class="skills-text jira">JIRA</span>
                       </div>
                   </div>
                 </div>
@@ -157,146 +285,7 @@
       </div>
      </section>
 
-    <section id= 'experience' class="experience-section" >
-    <div id="experienceData"  style="display: none;">
-        <div class="about-container">
-            <h3 class="page-title">Experience</h3>
-            <div class="card">
-                <div class="card-content">
-                  <div class="row">
-                    <div class="col s12 m10">
-                      <p>
-                        <span class="card-title"><a href="https://www.cgi.com/en" target="_blank"
-                            class="add-bold">CGI</a></span>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="role">Associate System Engineer</div>
-                  <ul>
-                    <li>
-                        Performed unit testing of web applications and troubleshoot issues.
-                    </li>
-                    <li>
-                        Developed user-friendly components with validation and error handling.
-                    </li>
-                   
-                  </ul>
-                </div>
-                <div class="card-action">
-                  <span>July 2016 - Feb 2019 | Bengaluru, India</span>
-                </div>
-              </div>
-            
-              
-              <div class="card">
-                <div class="card-content">
-                  <div class="row">
-                    <div>
-                      <p>
-                        <span class="card-title"><a href="https://www.medtronic.com/in-en/index.html" target="_blank"
-                            class="card-title">Medtronic</a></span>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="role">Associate IT Support Developer</div>
-                  <ul>
-                    <li>
-                        Developed and managed the frontend e-commerce platform using riot js.
-                    </li>
-                    <li>
-                        Worked on three web applications targeting customers, selling vendors, and admin users and created global components as per the requirement.
-                    </li>
-                    <li>
-                        Improved the response time by 20% by updating components to pure components and imported required components from library / utilites
-                    </li>
-                      <b class="add-bold">Tools:</b> React Js, Redux, taskboard
-                    </li>
-                  </ul>
-                  <div class="card-action">
-                    <span>Feb 2019 - Jul 2020 | Bengaluru, India</span>
-                  </div>
-                </div>
-               
-              </div>
-            
-              <!-- Experience 2 -->
-              <div class="card">
-                <div class="card-content">
-                    <div class="">
-                      <p>
-                        <span class="card-title"><a href="https://www.cognizant.com/in/en" class="add-bold">Cognizant
-                            </a></span>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="role">Software Developer</div>
-                  <ul>
-                    <li>
-                        Worked closely with global customers spanning to troubleshoot software problems.
-                    </li>
-                    <li>
-                        Resolved or escalated problem tickets to resolve user issues Designed UI which allows user to create rules which helps in
-                        calculating rebates.
-                    </li>
-                   
-                    <li>
-                        Applied emerging technologies to update and maintain site applicability.
-                    </li>
-                    <li>
-                        <b class="add-bold">Tools:</b> HTML, CSS, React js
-                      </li>
-                  </ul>
-                  <div class="card-action">
-                    <span>Aug 2020 - Dec 2021 | Bengaluru, India</span>
-                  </div>
-                </div>
-                
-              </div>
-            
-              <!-- Experience 3 -->
-              <div class="card finastra">
-                <div class="card-content">
-                    <div class="">
-                      <p>
-                        <span class="card-title"><a href="https://www.finastra.com/" target="_blank"
-                            class="add-bold">Finastra
-                             </a></span>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="role">Senior UI Developer</div>
-                  <ul>
-                    <li>
-                        Communicated with product managers and UX designers to translate project requirements and business objectives into polished
-                        user interfaces
-                    </li>
-                    <li>
-                        Improved and expanded project platforms using React js to develop rich User Interfaces.
-                    </li>
-                    <li>
-                        Collaborated with teammates to deliver valuable features meeting business and customer needs.
-                    </li>
-                    <li>
-                        Revised, modularized, and updated old code bases to modern development standards, reducing operating costs and improving functionality.
-                    </li>
-                    <li>
-                        Resolve defects/bugs during QA testing, pre-production, production, and post-release patches
-                    </li>
-                    <li>
-                        Worked in an Agile team, using Azure DevOps for task tracking and actively participated in daily sync-up calls for team alignment
-                    </li>
-                    
-                  </ul>
-                  <div class="card-action">
-                    <span>Dec 2021 - Current | India, India</span>
-                  </div>
-                </div>
-                
-              </div>
-            
-            </div>
-    </div>
-    </section>
+ 
   
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./script.js"></script>
@@ -321,7 +310,7 @@
 
             aboutLink.classList.remove('active');
             home.classList.add('active');
-            mainContainer.style.display='inline-block';
+            mainContainer.style.display='flex';
             aboutData.style.display='none';
             skills.classList.remove('active');
             skillsData.style.display ='none';
@@ -363,6 +352,7 @@
             home.classList.remove('active');
             skills.classList.remove('active');
             mainContainer.style.display = 'none'
+            aboutLink.classList.remove('active');
             aboutData.style.display = 'none';
             skillsData.style.display ='none';
         })
