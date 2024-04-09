@@ -11,13 +11,14 @@
 <body>
     <header class="header">
       <nav>
-        <a href="#" class="logo" >Portfolio.</a>
+        <a href="#" class="logo" >Saida.</a>
       </nav>
         <nav class="navbar">
             <a href="#" class="active" style="--i:1" id="home">Home</a>
             <a href="#" aria-label="Navigate to the About section" id="about" style="--i:2">About</a>
-            <a href="#" style="--i:4" id ='experience'>Experience</a>
-            <a href="#" style="--i:3" id="skills">Skills</a>
+            <a href="#" style="--i:3" id ='experience'>Experience</a>
+            <a href="#" style="--i:4" id="skills">Skills</a>
+            <a href="#" style="--i:5" id="education">Education</a>
         </nav>
        
     </header>
@@ -26,7 +27,7 @@
         <div class="info-side">
             <h3 class="hello">Hello , It's me</h3>
             <h1>Saida Taj M R</h1>
-            <h3 class="iam">And I'm a <span id="changing-text">Senior UI Developer</span></h3>
+            <h3 class="iam">And I'm skilled at <span id="changing-text">Vanila JavaScript</span></h3>
             <p class="my-info">
                 Self-driven, quick starter, passionate UI Developer with a curious mind who enjoys solving a complex and challenging real-world problems. 
 
@@ -42,15 +43,16 @@
                     </a>
                </div>
             <br/>
+            <button class="downloadCv">Download CV</button>
         </div>
         <span class="profile-image">
             <img src="./saida.jpg" alt="">
         </span>
     </div>
-    <section id="about" class="about-section"  >
-        <div id="aboutData" style="display: none;">
-            <h3 class="page-title">About</h3>
+    <section id="aboutData" class="about-section" style="display: none;" >
+        <div  >
             <div class="common-container flow-text">
+            <h3 class="page-title">About</h3>
                 <p>
                   As a developer, I believe in continuous learning. My current focus is on expanding my knowledge of JavaScript libraries and frameworks beyond React.js and Angular.
                 </p>
@@ -70,8 +72,8 @@
             </div>
         </div>
     </section>
-    <section id= 'experience' class="experience-section" >
-      <div id="experienceData"  style="display: none;">
+    <section id="experienceData"  class="experience-section"  style="display: none;">
+      <div>
           <div class="common-container">
               <h3 class="page-title">Experience</h3>
                <!-- Experience 4 -->
@@ -206,7 +208,7 @@
       </section>
     <section id="skills" class="skills-section">
         <div id="skills-data" style="display: none;">
-            <div class="common-container skills-container">
+            <div class="common-container">
             <h3 class="page-title">Skills</h3>
               <div class="card">
                 <div class="card-content">
@@ -253,6 +255,9 @@
                   <div class="align-card-icons">
                     <div class="col s4 m2">
                       <img alt="" src="/assets/angular.png" class="responsive-img" /><span class="skills-text">Angular</span>
+                    </div>
+                    <div class="col s4 m2">
+                      <img alt="" src="/assets/Vue.js.png" class="responsive-img vue" /><span class="skills-textvue">Vue JS</span>
                     </div>
                     <div class="col s4 m2">
                       <img alt="" src="/assets/tailwindcss.png" class="responsive-img" /><span class="skills-text">Tailwind CSS</span>
@@ -309,8 +314,6 @@
     } else {
       home.addEventListener('click', function(event){
             event.preventDefault();
-            console.log('Home clicked')
-
             aboutLink.classList.remove('active');
             home.classList.add('active');
             mainContainer.style.display='flex';
@@ -323,32 +326,16 @@
         })
         aboutLink.addEventListener('click', function(event) {
             event.preventDefault();
-            console.log('about clicked')
-
             aboutLink.classList.add('active');
+            aboutData.style.display = 'block';
             home.classList.remove('active');
             skills.classList.remove('active');
             mainContainer.style.display = 'none'
-            aboutData.style.display = 'block';
             skillsData.style.display ='none';
             experience.classList.remove('active');
             experienceData.style.display='none';
         });
-        skills.addEventListener('click', function(event){
-            console.log('skills clicked')
-
-            event.preventDefault();
-            skills.classList.add('active')
-            aboutLink.classList.remove('active');
-            home.classList.remove('active');
-            mainContainer.style.display = 'none'
-            aboutData.style.display =  'none' ;
-            skillsData.style.display='block';
-            experience.classList.remove('active');
-            experienceData.style.display='none';
-        });
         experience.addEventListener('click', function(event){
-            console.log('experience')
             event.preventDefault();
             experience.classList.add('active');
             experienceData.style.display = 'block'
@@ -358,7 +345,19 @@
             aboutLink.classList.remove('active');
             aboutData.style.display = 'none';
             skillsData.style.display ='none';
-        })
+        });
+        skills.addEventListener('click', function(event){
+            event.preventDefault();
+            skills.classList.add('active');
+            skillsData.style.display='block';
+            home.classList.remove('active');
+            experience.classList.remove('active');
+            mainContainer.style.display = 'none'
+            aboutLink.classList.remove('active');
+            aboutData.style.display =  'none' ;
+            experienceData.style.display='none';
+        });
+       
     }
        
     </script>

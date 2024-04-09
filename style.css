@@ -144,10 +144,11 @@ button{
     cursor: pointer;
     font-weight: 600;
     transition: 0.3s;
-    box-shadow: 0 0 10px #00ff2f;
     animation: slideUp 1s ease forwards;
     animation-delay: 1.5s;
     opacity: 0;
+    font-size: medium;
+    letter-spacing: 0.5px;
 }
 /* ul {
     list-style-type: none;
@@ -199,7 +200,7 @@ li{
 
 
 button:hover{
-    box-shadow: none;
+    box-shadow: 0 0 10px #00ff2f;
 }
 .card {
     position: relative;
@@ -317,13 +318,13 @@ button:hover{
         opacity: 1;
     }
 }
-#aboutData h3{
+/* #aboutData h3{
     margin-top: 8%;
     margin-bottom: 3%;
-}
-#experienceData h3{
+} */
+/* #experienceData h3{
     margin-top: -5%;
-}
+} */
 @keyframes zoomIn {
     0%{
         transform: scale(0);
@@ -355,6 +356,9 @@ button:hover{
     letter-spacing: 0.5px;
     font-weight: 400;
 }
+p.my-info {
+    width: 70% !important;
+}
 .main-container , .about-section,.experience-section{
     display: flex;
     flex-direction: column-reverse;
@@ -385,7 +389,7 @@ p,section{
     line-height: 10px;
     margin: 0.75rem 0 0.45rem 0;
 }
-.responsive-img {
+.responsive-img ,.responsive-img-vue{
     max-height: 50px;
     padding-bottom: 5px;
     margin: 0.5rem 0;
@@ -393,14 +397,18 @@ p,section{
 .common-container{
     width: 150%;
 }
+img.responsive-img.vue {
+    height: 90px;
+    padding-top: 20px;
+}
 .skills-container{
     width: 180%;
     margin-left: -20%;
 }
-#aboutData h3{
+/* #aboutData h3{
     width: 150%;
     margin-bottom: 8%;
-}
+} */
 section{
     width: 80% !important;
 }
