@@ -413,7 +413,7 @@ p,section{
   margin: 0.5rem 0;
 }
 .common-container{
-  width: 100%;
+  width: 150%;
 }
 img.responsive-img.vue {
   height: 90px;
@@ -424,7 +424,7 @@ img.responsive-img.vue {
   /* margin-left: -20%; */
 }
 /* #aboutData h3{
-  width: 100%;
+  width: 150%;
   margin-bottom: 8%;
 } */
 section{
@@ -462,7 +462,7 @@ img.icons{
   font-size: 12px;
 }
 .card.finastra {
-  width: 100%;
+  width: 150%;
 }
 
 
@@ -546,7 +546,7 @@ p,section{
     margin: 0.5rem 0;
 }
 .common-container{
-    width: 100%;
+    width: 150%;
 }
 img.responsive-img.vue {
     height: 90px;
@@ -557,7 +557,7 @@ img.responsive-img.vue {
     margin-left: -20%;
 }
 /* #aboutData h3{
-    width: 100%;
+    width: 150%;
     margin-bottom: 8%;
 } */
 section{
@@ -592,7 +592,7 @@ section#skills-data {
     font-size: 12px;
 }
 .card.finastra {
-    width: 100%;
+    width: 150%;
 }
 
 
